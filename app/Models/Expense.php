@@ -12,4 +12,5 @@ class Expense extends Model
         'type_of_expence',
         'cost'
     ];
+    //test
 }
