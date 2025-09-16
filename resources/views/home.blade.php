@@ -61,7 +61,7 @@
         @forelse($expenses as $expense)
             <div class="expense-card">
                 <strong>{{ $expense->title }}</strong>  
-                <span class="float-end">{{ number_format($expense->amount, 2) }} zł</span><br>
+                <span class="float-end">{{ number_format($expense->cost, 2) }} zł</span><br>
                 <small class="text-muted">Data: {{ $expense->created_at->format('d.m.Y') }}</small>
             </div>
         @empty
